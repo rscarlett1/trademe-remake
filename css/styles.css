@@ -241,6 +241,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72777f', end
 #categories {
 	background-color: white;
 	width: 66.6%;
+	
+}
+
+/* Clearfix for the categories container*/
+
+#categories:after{
+	content: '';
+	display: block;
+	height:	10px;
+	clear: both;
+
 }
 
 .container {
@@ -255,7 +266,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72777f', end
 
 #main-categories li {
 	display:	inline-block;
-	width:		140px;
+	width:		100px;
 	text-align: center;
 	padding: 8px;
 }
@@ -289,10 +300,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72777f', end
 #main-categories ~ ul {
 	list-style: none;
 	padding-left: 20px;
-	background-color: orange;
 	width:	33.3333%;
 	float:	left;
 	box-sizing: border-box;
+	margin-top: 0;
 
 }
 
@@ -304,6 +315,10 @@ main {
 	content:	'';
 	display:	block;
 	clear:	both;
+}
+
+#categories ul:last-child {
+	padding-right: 20px
 }
 
 
